@@ -32,33 +32,3 @@ Adaptive Convergence: Dynamic threshold adjustment using temporal correlation
 
 Standard Interfaces: AXI-Stream for easy system integration
 
-Project Structure
-text
-ws_rpe_project/
-├── rtl/                              # RTL Source Code
-│   ├── ws_rpe_top.sv                 # Top-level module with AXI-Stream interfaces
-│   ├── ws_rpe_engine.sv              # Main computation engine
-│   ├── work_stealing_controller.sv   # Dynamic task redistribution
-│   ├── redundant_pe_mapper.sv        # Redundant PE activation
-│   ├── processing_element.sv         # 2×1 PE core
-│   ├── block_partitioner.sv          # Adaptive matrix partitioning
-│   ├── reorder_buffer.sv             # Result reordering
-│   ├── dynamic_adjustment_unit.sv    # Adaptive convergence control
-│   ├── convergence_controller.sv     # Convergence checking
-│   ├── block_scheduler.sv            # Task scheduling
-│   ├── vector_combiner.sv            # Vector assembly
-│   ├── performance_monitor.sv        # Performance metrics
-│   ├── system_controller.sv          # System control
-│   └── input_processor.sv            # Input processing
-├── sim/                              # Simulation Environment
-│   ├── tb_ws_rpe.sv                  # Top-level testbench
-│   ├── test_cases/                   # Test matrices
-│   └── verification/                 # Verification utilities
-├── scripts/                          # Build Scripts
-│   ├── synthesis.tcl                 # Vivado synthesis
-│   ├── implementation.tcl            # Implementation
-│   └── simulation.tcl                # Simulation
-├── constraints/                      # FPGA Constraints
-│   └── timing.xdc                    # Timing constraints
-└── docs/                             # Documentation
-    └── architecture.md               # Architecture specification
