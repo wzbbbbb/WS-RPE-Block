@@ -7,7 +7,7 @@ WS-RPE Block is an innovative hardware architecture designed for real-time eigen
 
 The core innovation lies in the co-design of work-stealing and redundant-PE activation as first-class hardware primitives, enabling adaptive computation that matches the dynamic nature of control system workloads.
 
-🏗️ Architecture Overview
+ Architecture Overview
 Core Components
 The architecture consists of several key modules that work together to provide dynamic, adaptive computation:
 
@@ -32,7 +32,7 @@ Adaptive Convergence: Dynamic threshold adjustment using temporal correlation
 
 Standard Interfaces: AXI-Stream for easy system integration
 
-📁 Project Structure
+Project Structure
 text
 ws_rpe_project/
 ├── rtl/                              # RTL Source Code
